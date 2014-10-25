@@ -1,0 +1,1391 @@
+Error: You don't have permission to access that port.
+[24/May/2014 13:28:23] "POST /updata HTTP/1.1" 500 93813
+[24/May/2014 13:28:50] "POST /updata HTTP/1.1" 500 93813
+[24/May/2014 13:32:55] "POST /updata HTTP/1.1" 500 93813
+[24/May/2014 13:33:21] "POST /newlover HTTP/1.1" 500 93937
+[24/May/2014 13:33:21] "POST /updata HTTP/1.1" 500 92834
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 13:34:23] "POST /newlover HTTP/1.1" 500 93583
+[24/May/2014 13:34:23] "POST /updata HTTP/1.1" 500 92480
+[24/May/2014 13:35:03] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 13:35:03] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:35:21] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 13:35:21] "POST /updata HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 13:36:42] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 13:36:42] "POST /updata HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 13:37:58] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 13:37:58] "POST /updata HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 13:39:08] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 13:39:08] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:39:25] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 13:39:25] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:40:57] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:42:24] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:45:22] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:48:04] "GET /admin HTTP/1.1" 200 1894
+[24/May/2014 13:48:09] "POST /admin HTTP/1.1" 302 0
+[24/May/2014 13:48:09] "GET /admin HTTP/1.1" 200 4324
+[24/May/2014 13:48:14] "GET /adminapi/hintuser/ HTTP/1.1" 200 2824
+[24/May/2014 13:48:15] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:48:18] "GET /adminapi/renrenuser/ HTTP/1.1" 200 2826
+[24/May/2014 13:48:18] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:48:21] "GET /adminapi/loveruser/ HTTP/1.1" 200 2870
+[24/May/2014 13:48:21] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:48:23] "GET /adminapi/activatecode/ HTTP/1.1" 200 2843
+[24/May/2014 13:48:23] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:55:00] "GET /admin HTTP/1.1" 200 1894
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 212, in write
+    self.send_headers()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 270, in send_headers
+    self.send_preamble()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 194, in send_preamble
+    'Date: %s\r\n' % format_date_time(time.time())
+  File "/usr/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[24/May/2014 13:55:00] "GET /admin HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 139, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[24/May/2014 13:55:00] "GET /admin HTTP/1.1" 200 1894
+[24/May/2014 13:55:04] "POST /admin HTTP/1.1" 302 0
+[24/May/2014 13:55:04] "GET /admin HTTP/1.1" 200 4324
+[24/May/2014 13:55:08] "GET /adminapi/renrenuser/ HTTP/1.1" 200 2826
+[24/May/2014 13:55:08] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:55:11] "GET /adminapi/renrenuser/add/ HTTP/1.1" 200 6098
+[24/May/2014 13:55:11] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:55:14] "GET /adminapi/ HTTP/1.1" 200 3202
+[24/May/2014 13:55:16] "GET /adminapi/hintuser/ HTTP/1.1" 200 2824
+[24/May/2014 13:55:16] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:55:19] "GET /adminapi/hintuser/add/ HTTP/1.1" 200 6180
+[24/May/2014 13:55:19] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 51570)
+----------------------------------------
+[24/May/2014 13:55:38] "GET /adminapi/ HTTP/1.1" 200 2444
+[24/May/2014 13:55:39] "GET /adminapi/renrenuser/ HTTP/1.1" 200 2826
+[24/May/2014 13:55:40] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:55:41] "GET /adminapi/ HTTP/1.1" 200 2444
+[24/May/2014 13:55:42] "GET /adminapi/activatecode/ HTTP/1.1" 200 2843
+[24/May/2014 13:55:42] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:55:43] "GET /adminapi/ HTTP/1.1" 200 2444
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 13:56:42] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:56:49] "GET /adminapi/renrenuser/ HTTP/1.1" 200 2826
+[24/May/2014 13:56:49] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 13:57:31] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 13:57:31] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:57:31] "POST /updata HTTP/1.1" 500 49083
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 13:58:02] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 13:58:02] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 13:58:02] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 13:58:53] "POST /updata HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:01:32] "POST /updata HTTP/1.1" 500 71633
+[24/May/2014 14:02:04] "POST /newlover HTTP/1.1" 500 71833
+[24/May/2014 14:02:04] "POST /updata HTTP/1.1" 500 70672
+[24/May/2014 14:02:04] "POST /updata HTTP/1.1" 500 71013
+[24/May/2014 14:02:35] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:02:35] "POST /updata HTTP/1.1" 200 63
+[24/May/2014 14:02:35] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:02:51] "POST /updata HTTP/1.1" 200 63
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:04:35] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:08:30] "GET /admin HTTP/1.1" 200 3566
+[24/May/2014 14:08:33] "GET /adminapi/activatecode/ HTTP/1.1" 200 2843
+[24/May/2014 14:08:33] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:08:36] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[24/May/2014 14:08:36] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:08:40] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6260
+[24/May/2014 14:08:40] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:08:56] "GET /adminapi/renrenuser/2/ HTTP/1.1" 200 6223
+[24/May/2014 14:08:56] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:14:45] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:14:45] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:14:45] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 14:16:24] "POST /updata HTTP/1.1" 200 62
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:19:17] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:19:17] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:19:17] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 14:19:52] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:19:52] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:19:52] "POST /havelove HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:20:25] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:20:25] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:20:25] "POST /havelove HTTP/1.1" 200 105
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:22:31] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:22:31] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:22:31] "POST /havelove HTTP/1.1" 200 118
+[24/May/2014 14:22:38] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:22:49] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:23:12] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:23:12] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 14:23:56] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:23:56] "POST /havelove HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:32:57] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:32:57] "POST /havelove HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:34:13] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 14:34:13] "POST /updata HTTP/1.1" 200 62
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:35:17] "GET /adminapi/ HTTP/1.1" 200 2444
+[24/May/2014 14:35:18] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[24/May/2014 14:35:18] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:35:22] "GET /adminapi/renrenuser/2/ HTTP/1.1" 200 6223
+[24/May/2014 14:35:22] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:35:26] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[24/May/2014 14:35:27] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:35:28] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6310
+[24/May/2014 14:35:28] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:35:30] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[24/May/2014 14:35:30] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:37:06] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:37:48] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 14:37:49] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:38:13] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 14:38:13] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:38:44] "POST /adminapi/renrenuser/ HTTP/1.1" 200 2241
+[24/May/2014 14:38:46] "POST /adminapi/renrenuser/ HTTP/1.1" 302 0
+[24/May/2014 14:38:46] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4054
+[24/May/2014 14:38:46] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:38:50] "GET /adminapi/renrenuser/3/ HTTP/1.1" 200 6223
+[24/May/2014 14:38:50] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 14:38:53] "GET /adminapi/renrenuser/ HTTP/1.1" 200 3932
+[24/May/2014 14:40:06] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 14:40:07] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 14:40:21] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:40:23] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:40:31] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:40:35] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:40:39] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:40:45] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:40:52] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:41:06] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:41:09] "POST /newlover HTTP/1.1" 200 84
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 14:45:39] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 14:45:41] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:45:45] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 14:45:50] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:45:53] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 14:45:57] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 14:45:59] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 14:46:02] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 14:46:05] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:46:07] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:46:19] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:46:21] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:46:24] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:46:27] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:46:29] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:46:32] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:48:19] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:48:23] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 14:53:18] "POST /havelove HTTP/1.1" 200 274
+[24/May/2014 14:53:33] "POST /updata HTTP/1.1" 200 63
+[24/May/2014 14:54:04] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 15:02:11] "POST /havelove HTTP/1.1" 200 286
+[24/May/2014 15:02:11] "POST /updata HTTP/1.1" 200 63
+[24/May/2014 15:02:25] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 15:04:12] "POST /updata HTTP/1.1" 200 63
+[24/May/2014 15:04:12] "POST /havelove HTTP/1.1" 200 299
+[24/May/2014 15:04:25] "POST /newlover HTTP/1.1" 200 85
+[24/May/2014 15:05:11] "GET /adminapi/renrenuser/ HTTP/1.1" 200 7797
+[24/May/2014 15:05:11] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 15:05:15] "GET /adminapi/renrenuser/3/ HTTP/1.1" 200 6460
+[24/May/2014 15:05:15] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 15:05:23] "POST /adminapi/renrenuser/3/ HTTP/1.1" 302 0
+[24/May/2014 15:05:23] "GET /adminapi/renrenuser/ HTTP/1.1" 200 7944
+[24/May/2014 15:05:23] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 15:05:30] "POST /havelove HTTP/1.1" 200 312
+[24/May/2014 15:05:34] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 15:05:42] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:10:09] "POST /havelove HTTP/1.1" 200 312
+[24/May/2014 15:11:11] "POST /updata HTTP/1.1" 200 13
+[24/May/2014 15:19:08] "POST /havelove HTTP/1.1" 200 312
+[24/May/2014 15:19:09] "POST /updata HTTP/1.1" 200 64
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 15:26:04] "POST /havelove HTTP/1.1" 200 312
+[24/May/2014 15:26:04] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 15:26:28] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:26:37] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:26:47] "POST /newlover HTTP/1.1" 200 86
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x7fce65c9b710>>
+Validating models...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 91, in inner_run
+    self.validate(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 266, in validate
+    num_errors = get_validation_errors(s, app)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/validation.py", line 30, in get_validation_errors
+    for (app_name, error) in get_app_errors().items():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/loading.py", line 158, in get_app_errors
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/loading.py", line 64, in _populate
+    self.load_app(app_name, True)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/loading.py", line 88, in load_app
+    models = import_module('.models', app_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/gpxlcj/project/uniquehackday/left_field_temp/maptrace/models.py", line 7
+SyntaxError: Non-ASCII character '\xe5' in file /home/gpxlcj/project/uniquehackday/left_field_temp/maptrace/models.py on line 7, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+[24/May/2014 15:30:33] "GET /admin HTTP/1.1" 500 94235
+[24/May/2014 15:30:59] "GET /admin HTTP/1.1" 200 4986
+[24/May/2014 15:31:03] "GET /adminmaptrace/position/ HTTP/1.1" 500 162498
+[24/May/2014 15:31:32] "POST /havelove HTTP/1.1" 200 351
+[24/May/2014 15:31:32] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 15:31:38] "GET /adminmaptrace/position/ HTTP/1.1" 200 2839
+[24/May/2014 15:31:38] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 15:31:40] "GET /adminmaptrace/ HTTP/1.1" 200 2090
+[24/May/2014 15:31:41] "GET /admin HTTP/1.1" 200 4986
+[24/May/2014 15:31:50] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:31:55] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:32:00] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:35:04] "POST /havelove HTTP/1.1" 200 390
+[24/May/2014 15:35:06] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 15:35:25] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:35:45] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:35:49] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:35:51] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 15:35:54] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 19:18:53] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 19:18:54] "POST /havelove HTTP/1.1" 200 481
+[24/May/2014 19:21:03] "POST /havelove HTTP/1.1" 200 481
+[24/May/2014 19:21:04] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 19:26:24] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 19:26:25] "POST /havelove HTTP/1.1" 200 481
+[24/May/2014 19:30:42] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 19:30:43] "POST /havelove HTTP/1.1" 200 481
+[24/May/2014 19:31:09] "POST /havelove HTTP/1.1" 200 481
+[24/May/2014 19:31:09] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 19:36:15] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 19:36:51] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 19:36:51] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 19:37:17] "POST /havelove HTTP/1.1" 200 481
+[24/May/2014 19:37:18] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 19:41:29] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 19:41:29] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 19:41:54] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 19:41:54] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 19:42:41] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 19:42:41] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 19:43:35] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 19:43:35] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 19:44:49] "GET / HTTP/1.1" 404 2224
+[24/May/2014 19:44:52] "GET /admin HTTP/1.1" 200 4986
+[24/May/2014 19:44:56] "GET /adminapi/activatecode/ HTTP/1.1" 200 2843
+[24/May/2014 19:44:57] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:44:59] "GET /adminapi/renrenuser/ HTTP/1.1" 200 10434
+[24/May/2014 19:44:59] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:45:11] "GET /adminapi/renrenuser/20/ HTTP/1.1" 200 6223
+[24/May/2014 19:45:11] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:45:15] "GET /adminapi/renrenuser/31/ HTTP/1.1" 200 6223
+[24/May/2014 19:45:15] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:45:17] "GET /adminapi/renrenuser/36/ HTTP/1.1" 200 6223
+[24/May/2014 19:45:17] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:45:20] "GET /adminapi/renrenuser/38/ HTTP/1.1" 200 6223
+[24/May/2014 19:45:21] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:45:41] "GET /adminapi/renrenuser/36/ HTTP/1.1" 200 6223
+[24/May/2014 19:45:41] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:45:44] "GET /adminapi/renrenuser/21/ HTTP/1.1" 200 6223
+[24/May/2014 19:45:44] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:45:47] "GET /adminapi/renrenuser/3/ HTTP/1.1" 200 6591
+[24/May/2014 19:45:47] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 19:47:12] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 19:47:12] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 19:48:23] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 19:48:24] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 19:51:36] "POST /havelove HTTP/1.1" 200 25
+[24/May/2014 19:51:36] "POST /updata HTTP/1.1" 200 62
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 22:47:47] "GET /admin HTTP/1.1" 200 1894
+[24/May/2014 22:47:54] "POST /havelove HTTP/1.1" 200 481
+[24/May/2014 22:47:55] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 22:48:20] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 22:48:28] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 22:48:32] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 22:48:36] "POST /newlover HTTP/1.1" 200 86
+Error: You don't have permission to access that port.
+[24/May/2014 23:00:18] "GET /admin HTTP/1.1" 200 1894
+[24/May/2014 23:00:34] "POST /havelove HTTP/1.1" 200 520
+[24/May/2014 23:00:36] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 23:00:54] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:01:01] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:01:06] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:01:10] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:01:14] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:02:19] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:07:01] "POST /havelove HTTP/1.1" 200 559
+[24/May/2014 23:07:02] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 23:07:21] "POST /havelove HTTP/1.1" 200 559
+[24/May/2014 23:07:22] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 23:07:45] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:08:00] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:08:08] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:08:59] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:09:05] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:09:10] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:09:13] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:09:18] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:09:42] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:09:52] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:09:59] "POST /newlover HTTP/1.1" 200 86
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 23:16:08] "GET /admin HTTP/1.1" 200 1894
+[24/May/2014 23:16:23] "POST /havelove HTTP/1.1" 200 585
+[24/May/2014 23:16:23] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 23:16:44] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:16:47] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:16:50] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:16:55] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:16:58] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:17:01] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:17:05] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:17:07] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:17:15] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:17:19] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:17:31] "POST /havelove HTTP/1.1" 200 585
+[24/May/2014 23:17:31] "POST /updata HTTP/1.1" 200 64
+[24/May/2014 23:17:56] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:17:59] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:18:03] "POST /newlover HTTP/1.1" 200 87
+[24/May/2014 23:18:42] "POST /newlover HTTP/1.1" 200 86
+[24/May/2014 23:18:49] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:19:31] "GET /admin HTTP/1.1" 200 4986
+[24/May/2014 23:19:34] "GET /adminapi/renrenuser/ HTTP/1.1" 200 11666
+[24/May/2014 23:19:34] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 23:19:43] "POST /adminapi/renrenuser/ HTTP/1.1" 200 8032
+[24/May/2014 23:19:51] "POST /adminapi/renrenuser/ HTTP/1.1" 302 0
+[24/May/2014 23:19:51] "GET /adminapi/renrenuser/ HTTP/1.1" 200 2949
+[24/May/2014 23:19:51] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 23:19:55] "GET /adminapi/ HTTP/1.1" 200 2444
+[24/May/2014 23:19:57] "GET /admin HTTP/1.1" 200 6673
+[24/May/2014 23:20:15] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 23:20:32] "GET /admin HTTP/1.1" 200 1894
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 23:21:34] "POST /updata HTTP/1.1" 500 81929
+[24/May/2014 23:21:34] "POST /havelove HTTP/1.1" 500 82220
+[24/May/2014 23:21:53] "POST /newlover HTTP/1.1" 500 82357
+[24/May/2014 23:22:00] "POST /newlover HTTP/1.1" 500 82357
+[24/May/2014 23:22:04] "POST /newlover HTTP/1.1" 500 82357
+[24/May/2014 23:22:12] "POST /newlover HTTP/1.1" 500 82357
+[24/May/2014 23:24:01] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 23:24:02] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 23:24:21] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:24:26] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:25:28] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 23:28:21] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:28:33] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:28:41] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:28:44] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:28:48] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:29:02] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 23:29:02] "POST /havelove HTTP/1.1" 200 53
+[24/May/2014 23:29:21] "POST /newlover HTTP/1.1" 200 84
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 23:31:37] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4457
+[24/May/2014 23:31:37] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 23:31:40] "POST /adminapi/renrenuser/ HTTP/1.1" 200 2507
+[24/May/2014 23:31:42] "POST /adminapi/renrenuser/ HTTP/1.1" 302 0
+[24/May/2014 23:31:42] "GET /adminapi/renrenuser/ HTTP/1.1" 200 2948
+[24/May/2014 23:31:42] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[24/May/2014 23:32:18] "POST /havelove HTTP/1.1" 200 13
+[24/May/2014 23:32:19] "POST /updata HTTP/1.1" 200 58
+[24/May/2014 23:32:34] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:32:43] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:34:08] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:34:21] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:34:51] "POST /newlover HTTP/1.1" 200 84
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[24/May/2014 23:42:25] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 23:42:26] "POST /havelove HTTP/1.1" 200 53
+[24/May/2014 23:43:50] "POST /havelove HTTP/1.1" 200 53
+[24/May/2014 23:43:51] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 23:44:05] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:44:09] "POST /havelove HTTP/1.1" 200 66
+[24/May/2014 23:44:56] "POST /newlover HTTP/1.1" 200 13
+[24/May/2014 23:45:00] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:45:19] "POST /havelove HTTP/1.1" 200 66
+[24/May/2014 23:53:13] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:53:13] "POST /havelove HTTP/1.1" 200 66
+[24/May/2014 23:58:08] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:58:09] "POST /havelove HTTP/1.1" 200 66
+[24/May/2014 23:59:03] "POST /updata HTTP/1.1" 200 62
+[24/May/2014 23:59:04] "POST /havelove HTTP/1.1" 200 66
+[24/May/2014 23:59:34] "POST /newlover HTTP/1.1" 200 84
+[24/May/2014 23:59:34] "POST /havelove HTTP/1.1" 200 79
+[25/May/2014 00:00:02] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 00:00:02] "POST /havelove HTTP/1.1" 200 92
+[25/May/2014 00:01:21] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 00:01:21] "POST /havelove HTTP/1.1" 200 105
+[25/May/2014 00:01:55] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 00:01:55] "POST /havelove HTTP/1.1" 200 118
+[25/May/2014 00:03:07] "POST /havelove HTTP/1.1" 200 118
+[25/May/2014 00:03:07] "POST /updata HTTP/1.1" 200 62
+[25/May/2014 00:04:40] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 00:04:40] "POST /havelove HTTP/1.1" 200 131
+[25/May/2014 00:07:35] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:07:36] "POST /havelove HTTP/1.1" 200 144
+[25/May/2014 00:07:55] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:07:56] "POST /havelove HTTP/1.1" 200 157
+[25/May/2014 00:10:33] "POST /havelove HTTP/1.1" 200 157
+[25/May/2014 00:11:48] "POST /havelove HTTP/1.1" 200 157
+[25/May/2014 00:11:49] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:14:16] "POST /admin HTTP/1.1" 302 0
+[25/May/2014 00:14:16] "GET /admin HTTP/1.1" 200 6676
+[25/May/2014 00:14:21] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5858
+[25/May/2014 00:14:21] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 00:14:32] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6341
+[25/May/2014 00:14:32] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 00:15:03] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:15:04] "POST /havelove HTTP/1.1" 200 170
+[25/May/2014 00:17:59] "POST /havelove HTTP/1.1" 200 170
+[25/May/2014 00:18:00] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:20:06] "POST /havelove HTTP/1.1" 200 170
+[25/May/2014 00:20:07] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:20:59] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:20:59] "POST /havelove HTTP/1.1" 200 183
+[25/May/2014 00:21:07] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:21:07] "POST /havelove HTTP/1.1" 200 196
+[25/May/2014 00:21:14] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:21:14] "POST /havelove HTTP/1.1" 200 209
+[25/May/2014 00:21:21] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:21:22] "POST /havelove HTTP/1.1" 200 222
+[25/May/2014 00:21:38] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:21:39] "POST /havelove HTTP/1.1" 200 235
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 00:25:06] "POST /havelove HTTP/1.1" 200 248
+[25/May/2014 00:25:07] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:25:23] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 00:25:23] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:29:53] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:29:54] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:31:40] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:31:42] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:33:31] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:33:32] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:49:35] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:49:36] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:53:39] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:53:40] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:54:08] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:54:08] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:54:41] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:54:41] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 00:55:31] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 00:55:32] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 01:01:48] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 01:01:48] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 01:03:38] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:03:38] "POST /havelove HTTP/1.1" 200 274
+[25/May/2014 01:12:45] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 01:12:46] "POST /havelove HTTP/1.1" 200 274
+[25/May/2014 01:13:39] "POST /havelove HTTP/1.1" 200 274
+[25/May/2014 01:13:40] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 01:25:28] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 01:25:29] "POST /havelove HTTP/1.1" 200 274
+[25/May/2014 01:25:44] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:25:45] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:25:45] "POST /havelove HTTP/1.1" 200 274
+[25/May/2014 01:26:42] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 01:26:42] "POST /havelove HTTP/1.1" 200 274
+[25/May/2014 01:27:02] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:27:02] "POST /havelove HTTP/1.1" 200 287
+[25/May/2014 01:27:24] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:27:24] "POST /havelove HTTP/1.1" 200 287
+[25/May/2014 01:27:28] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 01:27:43] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 01:27:49] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:27:49] "POST /havelove HTTP/1.1" 200 287
+[25/May/2014 01:28:03] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 01:28:29] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:28:29] "POST /havelove HTTP/1.1" 200 300
+[25/May/2014 01:28:56] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 01:29:53] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:29:53] "POST /havelove HTTP/1.1" 200 313
+[25/May/2014 01:39:59] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 01:40:00] "POST /havelove HTTP/1.1" 200 313
+[25/May/2014 01:40:27] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:40:27] "POST /havelove HTTP/1.1" 200 326
+[25/May/2014 01:41:19] "POST /havelove HTTP/1.1" 200 326
+[25/May/2014 01:41:20] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 01:41:33] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 01:41:34] "POST /havelove HTTP/1.1" 200 326
+[25/May/2014 02:10:30] "POST /havelove HTTP/1.1" 200 326
+[25/May/2014 02:10:31] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:11:15] "POST /havelove HTTP/1.1" 200 326
+[25/May/2014 02:11:15] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:22:20] "POST /havelove HTTP/1.1" 200 326
+[25/May/2014 02:22:20] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:26:26] "POST /havelove HTTP/1.1" 200 326
+[25/May/2014 02:26:27] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:26:55] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:26:55] "POST /havelove HTTP/1.1" 200 339
+[25/May/2014 02:29:32] "POST /havelove HTTP/1.1" 200 339
+[25/May/2014 02:29:32] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:29:53] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:29:53] "POST /havelove HTTP/1.1" 200 352
+[25/May/2014 02:30:42] "POST /havelove HTTP/1.1" 200 352
+[25/May/2014 02:30:43] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:31:16] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:31:16] "POST /havelove HTTP/1.1" 200 365
+[25/May/2014 02:31:31] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:31:31] "POST /havelove HTTP/1.1" 200 365
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 02:32:24] "POST /havelove HTTP/1.1" 200 365
+[25/May/2014 02:32:25] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:33:04] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:33:04] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 02:33:36] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 02:33:36] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:34:53] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:34:55] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 02:35:34] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 02:35:35] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:37:13] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 02:37:19] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:39:12] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 02:39:17] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:39:49] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 02:39:49] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 02:40:09] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:40:09] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 02:40:18] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 02:40:24] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:40:24] "POST /havelove HTTP/1.1" 200 390
+[25/May/2014 02:40:28] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 02:40:59] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:40:59] "POST /havelove HTTP/1.1" 200 403
+[25/May/2014 02:44:33] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:44:33] "POST /havelove HTTP/1.1" 200 403
+[25/May/2014 02:46:56] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:46:56] "POST /havelove HTTP/1.1" 200 416
+[25/May/2014 02:49:41] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:49:41] "POST /havelove HTTP/1.1" 200 429
+[25/May/2014 02:50:05] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:50:05] "POST /havelove HTTP/1.1" 200 442
+[25/May/2014 02:50:13] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:50:13] "POST /havelove HTTP/1.1" 200 455
+[25/May/2014 02:50:31] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:50:31] "POST /havelove HTTP/1.1" 200 468
+[25/May/2014 02:51:29] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:51:29] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 02:54:18] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 02:54:18] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 03:12:05] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 03:12:05] "POST /havelove HTTP/1.1" 200 494
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 03:18:47] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 03:19:17] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 03:19:17] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 03:19:34] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 03:19:34] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 03:20:29] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 03:20:49] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 03:20:58] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 03:21:41] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 03:29:01] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 03:29:02] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 03:37:26] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 03:37:27] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 03:43:22] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 03:43:23] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 05:05:55] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 05:05:55] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 05:31:43] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 05:31:44] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 05:32:02] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 05:32:02] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 05:32:10] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 06:24:32] "GET /admin HTTP/1.1" 200 6676
+[25/May/2014 06:24:40] "GET /adminapi/renrenuser/ HTTP/1.1" 200 10257
+[25/May/2014 06:24:40] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:24:52] "POST /adminapi/renrenuser/ HTTP/1.1" 200 6818
+[25/May/2014 06:25:00] "POST /adminapi/renrenuser/ HTTP/1.1" 302 0
+[25/May/2014 06:25:00] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4055
+[25/May/2014 06:25:00] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:26:01] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 06:26:01] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:26:33] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 06:26:33] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4079
+[25/May/2014 06:26:33] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Error: You don't have permission to access that port.
+[25/May/2014 06:33:40] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 06:33:41] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 06:34:37] "GET /admin HTTP/1.1" 200 6707
+[25/May/2014 06:34:42] "GET /adminauth/user/ HTTP/1.1" 200 6025
+[25/May/2014 06:34:42] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:34:47] "GET /adminauth/ HTTP/1.1" 200 2406
+[25/May/2014 06:34:49] "GET /admin HTTP/1.1" 200 6707
+[25/May/2014 06:34:50] "GET /adminapi/renrenuser/ HTTP/1.1" 200 3932
+[25/May/2014 06:34:51] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:38:00] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 06:38:00] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:38:13] "GET /adminapi/renrenuser/ HTTP/1.1" 200 3932
+[25/May/2014 06:38:13] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:38:15] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 06:38:15] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:38:41] "GET /adminapi/renrenuser/ HTTP/1.1" 200 3932
+[25/May/2014 06:38:41] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:38:43] "GET /adminapi/renrenuser/add/ HTTP/1.1" 200 6126
+[25/May/2014 06:38:43] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:40:17] "POST /adminapi/renrenuser/add/ HTTP/1.1" 200 6277
+[25/May/2014 06:40:17] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:40:51] "POST /adminapi/renrenuser/add/ HTTP/1.1" 302 0
+[25/May/2014 06:40:51] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4254
+[25/May/2014 06:40:51] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:40:54] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 06:40:54] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:42:10] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 06:42:10] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 06:43:36] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 06:43:36] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 06:43:53] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 06:44:05] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[25/May/2014 06:44:05] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:44:09] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 06:44:09] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:44:44] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[25/May/2014 06:44:44] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:44:46] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 06:44:46] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:45:30] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 06:45:30] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 06:47:52] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 06:47:52] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4256
+[25/May/2014 06:47:53] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:47:56] "GET /adminapi/renrenuser/2/ HTTP/1.1" 200 6251
+[25/May/2014 06:47:56] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:48:00] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[25/May/2014 06:48:01] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:48:01] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6580
+[25/May/2014 06:48:02] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:48:05] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 06:48:06] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4256
+[25/May/2014 06:48:06] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:48:08] "GET /adminapi/renrenuser/2/ HTTP/1.1" 200 6251
+[25/May/2014 06:48:08] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:48:25] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 06:48:25] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 06:48:52] "POST /adminapi/renrenuser/2/ HTTP/1.1" 302 0
+[25/May/2014 06:48:52] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4256
+[25/May/2014 06:48:52] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:48:53] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 06:49:13] "GET /adminapi/renrenuser/2/ HTTP/1.1" 200 6250
+[25/May/2014 06:49:13] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:49:19] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[25/May/2014 06:49:19] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:49:22] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6580
+[25/May/2014 06:49:22] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:49:35] "GET /adminapi/ HTTP/1.1" 200 2444
+[25/May/2014 06:50:40] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[25/May/2014 06:50:40] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:50:41] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6580
+[25/May/2014 06:50:41] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:50:54] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[25/May/2014 06:50:54] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 06:50:58] "GET /adminapi/ HTTP/1.1" 200 2444
+[25/May/2014 06:52:31] "GET /admin HTTP/1.1" 200 6833
+[25/May/2014 07:00:53] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:00:54] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:01:41] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:01:51] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4109
+[25/May/2014 07:01:51] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:01:53] "GET /adminapi/renrenuser/add/ HTTP/1.1" 200 6126
+[25/May/2014 07:01:53] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:02:21] "POST /adminapi/renrenuser/add/ HTTP/1.1" 200 6304
+[25/May/2014 07:02:21] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:03:00] "POST /adminapi/renrenuser/add/ HTTP/1.1" 302 0
+[25/May/2014 07:03:00] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4428
+[25/May/2014 07:03:01] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:03:03] "GET /adminapi/renrenuser/3/ HTTP/1.1" 200 6250
+[25/May/2014 07:03:03] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:03:12] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4283
+[25/May/2014 07:03:12] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:03:13] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6580
+[25/May/2014 07:03:13] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:03:15] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:03:34] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:04:02] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:04:02] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:05:36] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:08:28] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 07:08:28] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4430
+[25/May/2014 07:08:29] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:08:50] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:08:55] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:09:05] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:09:19] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:09:29] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6580
+[25/May/2014 07:09:29] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:09:47] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4283
+[25/May/2014 07:09:47] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:09:47] "GET /adminapi/renrenuser/3/ HTTP/1.1" 200 6250
+[25/May/2014 07:09:47] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:09:54] "GET /adminapi/renrenuser/3/delete/ HTTP/1.1" 200 1977
+[25/May/2014 07:09:55] "POST /adminapi/renrenuser/3/delete/ HTTP/1.1" 302 0
+[25/May/2014 07:09:55] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4256
+[25/May/2014 07:09:55] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:09:58] "GET /adminapi/renrenuser/2/ HTTP/1.1" 200 6250
+[25/May/2014 07:09:59] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:10:02] "GET /adminapi/renrenuser/2/delete/ HTTP/1.1" 200 1977
+[25/May/2014 07:10:03] "POST /adminapi/renrenuser/2/delete/ HTTP/1.1" 302 0
+[25/May/2014 07:10:03] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4079
+[25/May/2014 07:10:03] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:10:04] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6580
+[25/May/2014 07:10:04] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:10:13] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 07:10:13] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4079
+[25/May/2014 07:10:13] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:10:21] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:10:21] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:11:26] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:11:26] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:11:30] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:11:31] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:11:34] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:11:34] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:11:38] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:11:38] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:11:42] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:11:42] "POST /havelove HTTP/1.1" 200 481
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:12:54] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:12:54] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:13:01] "GET /adminapi/renrenuser/ HTTP/1.1" 200 3932
+[25/May/2014 07:13:01] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:13:09] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:13:09] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:16:32] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:20:51] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:20:53] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:21:59] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:21:59] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:22:09] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:22:09] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:23:57] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:23:57] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:24:18] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:24:18] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:25:24] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:25:25] "POST /updata HTTP/1.1" 200 63
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:26:40] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:26:41] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:27:20] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:27:21] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:27:36] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:27:36] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:27:40] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:27:41] "POST /havelove HTTP/1.1" 200 481
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:29:45] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:29:46] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:31:35] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:31:35] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:36:58] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:36:58] "POST /havelove HTTP/1.1" 200 481
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:38:58] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:38:58] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:39:13] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:39:13] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 07:39:18] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6580
+[25/May/2014 07:39:18] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:39:26] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:39:27] "POST /havelove HTTP/1.1" 200 481
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:42:30] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 07:42:30] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 07:42:36] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 07:42:36] "POST /havelove HTTP/1.1" 200 507
+[25/May/2014 07:42:43] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 07:42:43] "POST /havelove HTTP/1.1" 200 520
+[25/May/2014 07:42:45] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4457
+[25/May/2014 07:42:46] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:42:48] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6610
+[25/May/2014 07:42:48] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:42:52] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 07:42:53] "POST /havelove HTTP/1.1" 200 533
+[25/May/2014 07:44:21] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4631
+[25/May/2014 07:44:21] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:44:24] "GET /adminapi/renrenuser/add/ HTTP/1.1" 200 6126
+[25/May/2014 07:44:24] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:44:44] "POST /adminapi/renrenuser/add/ HTTP/1.1" 302 0
+[25/May/2014 07:44:44] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4950
+[25/May/2014 07:44:44] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:44:46] "GET /adminapi/renrenuser/5/ HTTP/1.1" 200 6223
+[25/May/2014 07:44:46] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:44:49] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4805
+[25/May/2014 07:44:49] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:44:51] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6620
+[25/May/2014 07:44:51] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:45:03] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 07:45:03] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4952
+[25/May/2014 07:45:03] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:45:19] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 07:45:19] "POST /havelove HTTP/1.1" 200 546
+[25/May/2014 07:45:27] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:45:27] "POST /havelove HTTP/1.1" 200 559
+[25/May/2014 07:46:23] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 07:46:23] "POST /havelove HTTP/1.1" 200 572
+[25/May/2014 07:46:32] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4979
+[25/May/2014 07:46:32] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:46:33] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:46:33] "POST /havelove HTTP/1.1" 200 585
+[25/May/2014 07:46:34] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6660
+[25/May/2014 07:46:34] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:46:41] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4979
+[25/May/2014 07:46:41] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:46:42] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6660
+[25/May/2014 07:46:42] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:46:47] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 07:46:47] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5126
+[25/May/2014 07:46:47] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:47:25] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6660
+[25/May/2014 07:47:26] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:48:31] "POST /havelove HTTP/1.1" 200 585
+[25/May/2014 07:48:32] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:48:53] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4979
+[25/May/2014 07:48:53] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:48:57] "GET /adminapi/renrenuser/6/ HTTP/1.1" 200 6250
+[25/May/2014 07:48:57] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:49:03] "GET /adminapi/renrenuser/ HTTP/1.1" 200 4979
+[25/May/2014 07:49:03] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:49:04] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6660
+[25/May/2014 07:49:04] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:51:21] "GET /adminapi/renrenuser/ HTTP/1.1" 500 267051
+[25/May/2014 07:51:49] "POST /havelove HTTP/1.1" 200 585
+[25/May/2014 07:51:50] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:52:50] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 07:52:51] "POST /havelove HTTP/1.1" 200 598
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:53:06] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:54:09] "POST /havelove HTTP/1.1" 200 611
+[25/May/2014 07:54:26] "GET /admin HTTP/1.1" 200 6926
+[25/May/2014 07:54:28] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5153
+[25/May/2014 07:54:28] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:54:30] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6680
+[25/May/2014 07:54:30] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:54:48] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 07:54:48] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5300
+[25/May/2014 07:54:48] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:55:01] "POST /havelove HTTP/1.1" 200 485
+[25/May/2014 07:55:02] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:55:20] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5153
+[25/May/2014 07:55:20] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:55:22] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:55:23] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6591
+[25/May/2014 07:55:23] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:56:55] "POST /havelove HTTP/1.1" 200 498
+[25/May/2014 07:56:59] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:57:15] "POST /havelove HTTP/1.1" 200 511
+[25/May/2014 07:57:20] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 07:58:02] "POST /havelove HTTP/1.1" 200 524
+[25/May/2014 07:58:03] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 07:58:28] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6611
+[25/May/2014 07:58:28] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 07:58:35] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 07:58:35] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5300
+[25/May/2014 07:58:35] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 07:59:30] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 08:00:43] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 08:01:08] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 08:01:59] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 08:03:30] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6620
+[25/May/2014 08:03:30] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:03:56] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 08:03:56] "POST /havelove HTTP/1.1" 200 533
+[25/May/2014 08:04:09] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 08:04:09] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5300
+[25/May/2014 08:04:09] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:04:18] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:04:24] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:04:28] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:04:36] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:04:43] "POST /newlover HTTP/1.1" 200 13
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 08:04:48] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:04:48] "POST /havelove HTTP/1.1" 200 559
+[25/May/2014 08:04:54] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:04:54] "POST /havelove HTTP/1.1" 200 572
+[25/May/2014 08:04:58] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:04:58] "POST /havelove HTTP/1.1" 200 585
+[25/May/2014 08:05:07] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6660
+[25/May/2014 08:05:07] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:05:20] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 08:05:20] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5829
+[25/May/2014 08:05:20] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:05:26] "GET /adminapi/renrenuser/ HTTP/1.1" 200 5682
+[25/May/2014 08:05:26] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:05:38] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:05:38] "POST /havelove HTTP/1.1" 200 455
+[25/May/2014 08:05:53] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:05:53] "POST /havelove HTTP/1.1" 200 468
+[25/May/2014 08:06:26] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:06:26] "POST /havelove HTTP/1.1" 200 481
+[25/May/2014 08:06:30] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:06:30] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 08:07:22] "POST /havelove HTTP/1.1" 200 494
+[25/May/2014 08:07:23] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 08:07:23] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:07:23] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 08:07:27] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 08:07:27] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:07:31] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6590
+[25/May/2014 08:07:31] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:07:47] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:07:47] "POST /havelove HTTP/1.1" 200 507
+[25/May/2014 08:07:52] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:07:52] "POST /havelove HTTP/1.1" 200 520
+[25/May/2014 08:07:55] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 08:07:55] "GET /adminapi/renrenuser/ HTTP/1.1" 200 6885
+[25/May/2014 08:07:55] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:07:56] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:07:56] "POST /havelove HTTP/1.1" 200 365
+[25/May/2014 08:07:57] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6491
+[25/May/2014 08:07:57] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:08:01] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:08:01] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 08:08:05] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:08:06] "POST /havelove HTTP/1.1" 200 391
+[25/May/2014 08:08:07] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 08:08:07] "GET /adminapi/renrenuser/ HTTP/1.1" 200 7413
+[25/May/2014 08:08:07] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:08:09] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6491
+[25/May/2014 08:08:09] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:08:14] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:08:14] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 08:08:27] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:08:27] "POST /havelove HTTP/1.1" 200 391
+[25/May/2014 08:08:34] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:08:40] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:08:40] "POST /havelove HTTP/1.1" 200 417
+[25/May/2014 08:08:45] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:08:45] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 08:08:45] "POST /havelove HTTP/1.1" 200 66
+[25/May/2014 08:08:45] "GET /adminapi/renrenuser/ HTTP/1.1" 200 8117
+[25/May/2014 08:08:45] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:09:02] "POST /updata HTTP/1.1" 200 62
+[25/May/2014 08:09:02] "POST /havelove HTTP/1.1" 200 66
+[25/May/2014 08:09:17] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6260
+[25/May/2014 08:09:17] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:09:29] "GET /admin HTTP/1.1" 200 6993
+[25/May/2014 08:09:32] "GET /adminapi/renrenuser/ HTTP/1.1" 200 7970
+[25/May/2014 08:09:32] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:09:33] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6260
+[25/May/2014 08:09:34] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:09:46] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 08:09:46] "GET /adminapi/renrenuser/ HTTP/1.1" 200 8117
+[25/May/2014 08:09:46] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:09:58] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 08:09:58] "POST /havelove HTTP/1.1" 200 66
+[25/May/2014 08:10:03] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 08:10:03] "POST /havelove HTTP/1.1" 200 79
+[25/May/2014 08:10:11] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 08:10:31] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 08:10:31] "POST /havelove HTTP/1.1" 200 105
+[25/May/2014 08:10:37] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:10:45] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:10:52] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 08:10:52] "POST /havelove HTTP/1.1" 200 144
+[25/May/2014 08:11:00] "POST /newlover HTTP/1.1" 200 84
+[25/May/2014 08:11:00] "POST /havelove HTTP/1.1" 200 157
+[25/May/2014 08:11:16] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:11:16] "POST /havelove HTTP/1.1" 200 170
+[25/May/2014 08:11:27] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:11:37] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:11:37] "POST /havelove HTTP/1.1" 200 196
+[25/May/2014 08:11:46] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:11:47] "POST /havelove HTTP/1.1" 200 209
+[25/May/2014 08:11:54] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:11:55] "POST /havelove HTTP/1.1" 200 222
+[25/May/2014 08:12:08] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:12:08] "POST /havelove HTTP/1.1" 200 235
+[25/May/2014 08:12:14] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:12:14] "POST /havelove HTTP/1.1" 200 248
+[25/May/2014 08:12:25] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:12:25] "POST /havelove HTTP/1.1" 200 261
+[25/May/2014 08:12:32] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:12:32] "POST /havelove HTTP/1.1" 200 274
+[25/May/2014 08:12:37] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:12:38] "POST /havelove HTTP/1.1" 200 287
+[25/May/2014 08:12:44] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:12:44] "POST /havelove HTTP/1.1" 200 300
+[25/May/2014 08:12:50] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:12:50] "POST /havelove HTTP/1.1" 200 313
+[25/May/2014 08:12:55] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:12:55] "POST /havelove HTTP/1.1" 200 326
+Validating models...
+
+0 errors found
+Django version 1.4, using settings 'left_field.settings'
+Development server is running at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/May/2014 08:16:03] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6461
+[25/May/2014 08:16:04] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:16:09] "GET /admin HTTP/1.1" 200 6996
+[25/May/2014 08:27:29] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:27:29] "POST /havelove HTTP/1.1" 200 339
+[25/May/2014 08:27:33] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:27:34] "POST /havelove HTTP/1.1" 200 352
+[25/May/2014 08:27:38] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:27:38] "POST /havelove HTTP/1.1" 200 365
+[25/May/2014 08:28:02] "GET /adminapi/renrenuser/ HTTP/1.1" 200 11666
+[25/May/2014 08:28:02] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:28:04] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6491
+[25/May/2014 08:28:04] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:28:22] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 08:28:22] "GET /adminapi/renrenuser/ HTTP/1.1" 200 11813
+[25/May/2014 08:28:22] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:28:43] "POST /havelove HTTP/1.1" 200 339
+[25/May/2014 08:28:44] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 08:29:23] "POST /havelove HTTP/1.1" 200 339
+[25/May/2014 08:29:25] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 08:29:40] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:29:40] "POST /havelove HTTP/1.1" 200 352
+[25/May/2014 08:29:59] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:30:00] "POST /havelove HTTP/1.1" 200 365
+[25/May/2014 08:30:04] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:30:04] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 08:31:05] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 08:31:06] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 08:31:13] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6501
+[25/May/2014 08:31:13] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:31:32] "POST /adminapi/renrenuser/1/ HTTP/1.1" 302 0
+[25/May/2014 08:31:32] "GET /adminapi/renrenuser/ HTTP/1.1" 200 12341
+[25/May/2014 08:31:32] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:31:34] "GET /adminapi/renrenuser/1/ HTTP/1.1" 200 6501
+[25/May/2014 08:31:34] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:32:34] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 08:32:34] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 08:35:17] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 08:35:18] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 08:37:55] "POST /havelove HTTP/1.1" 200 378
+[25/May/2014 08:37:57] "POST /updata HTTP/1.1" 200 63
+[25/May/2014 08:42:00] "GET /adminapi/renrenuser/ HTTP/1.1" 200 12194
+[25/May/2014 08:42:00] "GET /adminjsi18n/ HTTP/1.1" 200 2158
+[25/May/2014 08:42:29] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:42:37] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:42:37] "POST /havelove HTTP/1.1" 200 404
+[25/May/2014 08:43:11] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:43:25] "POST /newlover HTTP/1.1" 200 13
+[25/May/2014 08:43:31] "POST /newlover HTTP/1.1" 200 85
+[25/May/2014 08:43:31] "POST /havelove HTTP/1.1" 200 430
+[25/May/2014 08:43:35] "POST /newlover HTTP/1.1" 200 13
